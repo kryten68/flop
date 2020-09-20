@@ -7,21 +7,51 @@
 <!--<![endif]-->
 
 <head>
+    <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+
+    <title>F.L.O.P.</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+
 </head>
 
 <body>
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <h1>Hello World!!</h1>
 
-    <script src="" async defer></script>
+    <h1>Hello React!</h1>
+
+    <div id="test"></div>
+
+    <!-- Local React Lib -->
+    <script src="static/js/react/react.js"></script>
+
+    <!-- Local React DOM lib-->
+    <script src="static/js/react/react-dom.js"></script>
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        function DaftNewHeader() {
+            return (
+                <h2>My First React Header!</h2>
+            );
+        }
+        ReactDOM.render(<DaftNewHeader />, document.querySelector('#test'));
+    </script>
+
 </body>
 
 </html>
